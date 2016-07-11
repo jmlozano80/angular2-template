@@ -1,0 +1,36 @@
+
+<div class="jumbotron jumbotron-fluid jumbo-view">
+    <div class="container">
+        <h1 class="display-3">Fluid jumbotron</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <button class="btn btn-info" (click)="smModal.show()">Login</button>
+        <button class="btn btn-info" ng-click="openModal('registrationModal.tmpl.html')">Register</button>
+    </div>
+</div>
+
+<!--login modal-->
+
+
+<!--end login modal-->
+
+<!-- Small modal -->
+<button type="button" class="btn btn-primary" (click)="smModal.show()">Small modal</button>
+
+<div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" aria-label="Close" (click)="smModal.hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Small modal</h4>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                ...
+            </div>
+        </div>
+    </div>
+</div>
